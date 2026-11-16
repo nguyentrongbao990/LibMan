@@ -1,0 +1,32 @@
+PASS 19 PostgreSQL tables
+PASS DocumentAuthor composite only
+PASS DocumentCategory composite only
+PASS LoanDetail composite only
+PASS ImportInvoiceDetail composite only
+PASS ReturnDetail loanDetail unique, receipt not unique
+PASS one card per reader
+PASS open/cancel registration page ReaderCardRegistrationPage1
+PASS open/cancel registration page LibManHomePage1
+PASS cancel navigation writes no reader rows
+PASS real SUM(quantity) gives 320/245/180
+PASS correct supplier ranking
+PASS independent SQL SUM(quantity) matches DAO ranking volumes
+PASS start date inclusive
+PASS end date inclusive
+PASS empty range returns empty array
+PASS different period queries real rows
+PASS Minh Triet three invoices/date order
+PASS invoice staff populated without password
+PASS three detail rows in PN000137
+PASS detail DOC001
+PASS detail DOC002
+PASS detail DOC003
+PASS BigDecimal sum and stored total 14350000
+PASS independent SQL validates all stored totals
+PASS management login without session password
+PASS wrong password denied
+PASS library staff role denied
+PASS PreparedStatement login injection denied
+PASS rollback after first INSERT leaves no orphan/success object
+PASS reader/card committed with generated code/date/status
+PASS duplicate creates no second row/card

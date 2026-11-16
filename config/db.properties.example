@@ -1,0 +1,4 @@
+# Copy to .local/db.properties (ignored). Use a dedicated demo database.
+url=jdbc:postgresql://localhost:5432/libman
+user=YOUR_LOCAL_DB_USER
+password=YOUR_LOCAL_DB_PASSWORD

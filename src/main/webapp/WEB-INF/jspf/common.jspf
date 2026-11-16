@@ -1,0 +1,15 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="model.*,dao.*,java.time.*,java.time.format.*,java.math.*,java.text.*,java.util.*" %>
+<%!
+private String h(Object value) {
+    return value == null ? "" : value.toString().replace("&","&amp;").replace("<","&lt;").replace(">","&gt;").replace("\"","&quot;").replace("'","&#39;");
+}
+private String param(jakarta.servlet.http.HttpServletRequest req, String name) {
+    String value = req.getParameter(name); return value == null ? "" : value.trim();
+}
+private String date(LocalDate value) { return value == null ? "" : value.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")); }
+private String money(BigDecimal value) {
+    NumberFormat f = NumberFormat.getNumberInstance(Locale.forLanguageTag("vi-VN"));
+    f.setMinimumFractionDigits(0); f.setMaximumFractionDigits(2); return f.format(value);
+}
+%>
+<% request.setCharacterEncoding("UTF-8"); response.setHeader("Cache-Control","no-store"); String ctx = request.getContextPath(); %>

@@ -1,0 +1,126 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< vn.libman:LibMan >--------------------------
+[INFO] Building LibMan 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ LibMan ---
+[INFO] Deleting C:\Users\Admin\Libman\target
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ LibMan ---
+[INFO] skip non existing resourceDirectory C:\Users\Admin\Libman\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ LibMan ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 29 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ LibMan ---
+[INFO] skip non existing resourceDirectory C:\Users\Admin\Libman\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ LibMan ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ LibMan ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.4.0:war (default-war) @ LibMan ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [LibMan] in [C:\Users\Admin\Libman\target\LibMan]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\Admin\Libman\src\main\webapp]
+[INFO] Building war: C:\Users\Admin\Libman\target\LibMan.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.053 s
+[INFO] Finished at: 2026-11-16T19:52:31+07:00
+[INFO] ------------------------------------------------------------------------
+PASS: 22 exact model declarations/inheritance; 5 business DAO signatures; protected connection; 19 DDL tables; 8 business + 2 auth JSP.
+PASS management login
+PASS initial list populated in session
+PASS reselect same supplier: fresh DAO SELECT observed via pg_blocking_pids
+PASS reselect same supplier: list and dates retained after lock release
+PASS reselect same supplier: refreshed session list supports invoice detail
+PASS back from invoice detail: fresh DAO SELECT observed via pg_blocking_pids
+PASS back from invoice detail: list and dates retained after lock release
+PASS back from invoice detail: refreshed session list supports invoice detail
+PASS statistics context/results retained
+Read-only reload regression complete; no fixture rows inserted/updated/deleted.
+PASS 19 PostgreSQL tables
+PASS DocumentAuthor composite only
+PASS DocumentCategory composite only
+PASS LoanDetail composite only
+PASS ImportInvoiceDetail composite only
+PASS ReturnDetail loanDetail unique, receipt not unique
+PASS one card per reader
+PASS open/cancel registration page ReaderCardRegistrationPage1
+PASS open/cancel registration page LibManHomePage1
+PASS cancel navigation writes no reader rows
+PASS real SUM(quantity) gives 320/245/180
+PASS correct supplier ranking
+PASS independent SQL SUM(quantity) matches DAO ranking volumes
+PASS start date inclusive
+PASS end date inclusive
+PASS empty range returns empty array
+PASS different period queries real rows
+PASS Minh Triet three invoices/date order
+PASS invoice staff populated without password
+PASS three detail rows in PN000137
+PASS detail DOC001
+PASS detail DOC002
+PASS detail DOC003
+PASS BigDecimal sum and stored total 14350000
+PASS independent SQL validates all stored totals
+PASS management login without session password
+PASS wrong password denied
+PASS library staff role denied
+PASS PreparedStatement login injection denied
+PASS rollback after first INSERT leaves no orphan/success object
+PASS reader/card committed with generated code/date/status
+PASS duplicate creates no second row/card
+PASS duplicate rejected: document+author
+PASS duplicate rejected: document+category
+PASS duplicate rejected: loan+copy
+PASS duplicate rejected: return loanDetail
+PASS duplicate rejected: invoice+document
+PASS repeated individual FK values accepted in all four composite tables; multiple details per return receipt accepted
+All constraint fixtures rolled back; existing rows preserved
+PASS unauthenticated ManagementStaffHomePage1 redirected
+PASS unauthenticated StatisticSelectionPage1 redirected
+PASS unauthenticated SupplierStatisticPage1 redirected
+PASS unauthenticated SupplierImportInvoiceListPage1 redirected
+PASS unauthenticated ImportInvoiceDetailPage1 redirected
+PASS home Vietnamese UTF-8
+PASS direct result access redirects safely
+PASS invalid input rejected server-side
+PASS form retained and escaped against XSS
+PASS independent invalid field rejected: inFullName
+PASS independent invalid field rejected: inCccd
+PASS independent invalid field rejected: inDateOfBirth
+PASS independent invalid field rejected: inDateOfBirth
+PASS independent invalid field rejected: inEmail
+PASS independent invalid field rejected: inPhone
+PASS invalid login / wrong role denied
+PASS invalid login / wrong role denied
+PASS login success and session rotated
+PASS three options; two outside scope disabled
+PASS HTTP statistics 320/245/180
+PASS supplier header, dates and invoices
+PASS invoice detail quantities/money/staff rendered
+PASS detail back retains supplier and dates
+PASS list back retains dates/results
+PASS forged invoice id rejected
+PASS invalid range clears old results
+PASS invalid range clears old results
+PASS invalid range clears old results
+PASS invalidated context rejects old supplier link
+PASS empty range notice
+PASS new period rejects stale context token
+PASS GET logout rejected
+PASS POST logout invalidates session
+PASS two concurrent POSTs give exactly one success
+PASS refresh/resubmit rejected as duplicate
+HTTP checks complete. Only synthetic demo reader data was added.
+WAR checksum matches: True
+Tomcat SEVERE/Exception lines: 0

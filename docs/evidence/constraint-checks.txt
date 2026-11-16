@@ -1,0 +1,7 @@
+PASS duplicate rejected: document+author
+PASS duplicate rejected: document+category
+PASS duplicate rejected: loan+copy
+PASS duplicate rejected: return loanDetail
+PASS duplicate rejected: invoice+document
+PASS repeated individual FK values accepted in all four composite tables; multiple details per return receipt accepted
+All constraint fixtures rolled back; existing rows preserved

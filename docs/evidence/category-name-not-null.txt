@@ -1,0 +1,18 @@
+Database: libman
+Server: PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+Category rows: 0
+NULL categoryName rows: 0
+Before: is_nullable=YES, type=character varying, max_length=150
+PASS read-only precheck; no schema/data changes
+PASS target database libman
+PASS pre-migration NULL count = 0 (locked)
+PASS categoryName is_nullable = NO
+PASS NULL INSERT rejected SQLState 23502; savepoint rolled back; explicit id avoids sequence increment
+PASS all other constraints unchanged
+PASS all other column definitions/nullability/defaults unchanged
+PASS all indexes unchanged
+PASS category rows and data fingerprint unchanged
+COMMITTED categoryName SET NOT NULL
+PASS new connection confirms committed NOT NULL varchar(150)
+PASS post-commit other constraints/columns/indexes unchanged
+PASS post-commit category data unchanged

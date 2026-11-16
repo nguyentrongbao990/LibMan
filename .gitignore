@@ -1,0 +1,26 @@
+target/
+.idea/
+*.iml
+.local/
+*.log
+config/db.properties
+
+# Local credentials and environment overrides (keep the reviewed example).
+db.properties
+.env
+.env.*
+!.env.example
+*.local.properties
+*.pem
+*.key
+
+# Generated binaries, downloaded dependencies and caches.
+*.class
+*.jar
+*.war
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+node_modules/
+logs/

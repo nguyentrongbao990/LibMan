@@ -1,0 +1,3 @@
+<% if (!(session.getAttribute("auth") instanceof ManagementStaff1)) {
+    response.sendRedirect(ctx + "/view/staff/LoginPage1.jsp"); return;
+} %>

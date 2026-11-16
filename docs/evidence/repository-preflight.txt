@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< vn.libman:LibMan >--------------------------
+[INFO] Building LibMan 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ LibMan ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ LibMan ---
+[INFO] skip non existing resourceDirectory C:\Users\Admin\Libman\.local\repository-checkout\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ LibMan ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 29 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ LibMan ---
+[INFO] skip non existing resourceDirectory C:\Users\Admin\Libman\.local\repository-checkout\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ LibMan ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ LibMan ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.4.0:war (default-war) @ LibMan ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [LibMan] in [C:\Users\Admin\Libman\.local\repository-checkout\target\LibMan]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\Admin\Libman\.local\repository-checkout\src\main\webapp]
+[INFO] Building war: C:\Users\Admin\Libman\.local\repository-checkout\target\LibMan.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.802 s
+[INFO] Finished at: 2026-11-16T22:25:52+07:00
+[INFO] ------------------------------------------------------------------------
+PASS target libman; existing public schema will not be modified
+PASS clean repository schema.sql executes in isolated transaction/schema
+PASS clean repository seed.sql executes in isolated transaction/schema
+PASS fresh schema creates 19 tables
+PASS fresh schema has categoryName NOT NULL
+PASS fresh seed statistics 320/245/180
+PASS fresh seed PN000137 total 14350000.00
+PASS fresh seed leaves reader sample unregistered
+PASS isolated schema and fixtures rolled back; public data untouched
+PASS clean repository WAR deployed, home HTTP 200 / UTF-8
+PASS unauthenticated management access redirects to login
+PASS seeded demo management login against configured libman
+PASS clean WAR statistics query gives 320/245/180
+PASS supplier invoices and PN000137 detail 14350000
+Smoke check used only demo login and SELECT flows; no reader/invoice data added.

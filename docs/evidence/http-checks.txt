@@ -1,0 +1,36 @@
+PASS unauthenticated ManagementStaffHomePage1 redirected
+PASS unauthenticated StatisticSelectionPage1 redirected
+PASS unauthenticated SupplierStatisticPage1 redirected
+PASS unauthenticated SupplierImportInvoiceListPage1 redirected
+PASS unauthenticated ImportInvoiceDetailPage1 redirected
+PASS home Vietnamese UTF-8
+PASS direct result access redirects safely
+PASS invalid input rejected server-side
+PASS form retained and escaped against XSS
+PASS independent invalid field rejected: inFullName
+PASS independent invalid field rejected: inCccd
+PASS independent invalid field rejected: inDateOfBirth
+PASS independent invalid field rejected: inDateOfBirth
+PASS independent invalid field rejected: inEmail
+PASS independent invalid field rejected: inPhone
+PASS invalid login / wrong role denied
+PASS invalid login / wrong role denied
+PASS login success and session rotated
+PASS three options; two outside scope disabled
+PASS HTTP statistics 320/245/180
+PASS supplier header, dates and invoices
+PASS invoice detail quantities/money/staff rendered
+PASS detail back retains supplier and dates
+PASS list back retains dates/results
+PASS forged invoice id rejected
+PASS invalid range clears old results
+PASS invalid range clears old results
+PASS invalid range clears old results
+PASS invalidated context rejects old supplier link
+PASS empty range notice
+PASS new period rejects stale context token
+PASS GET logout rejected
+PASS POST logout invalidates session
+PASS two concurrent POSTs give exactly one success
+PASS refresh/resubmit rejected as duplicate
+HTTP checks complete. Only synthetic demo reader data was added.

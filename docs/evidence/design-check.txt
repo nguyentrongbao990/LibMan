@@ -1,0 +1,1 @@
+PASS: 22 exact model declarations/inheritance; 5 business DAO signatures; protected connection; 19 DDL tables; 8 business + 2 auth JSP.
